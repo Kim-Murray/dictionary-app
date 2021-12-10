@@ -1,7 +1,8 @@
-* {
-  margin: 10px;
+.App {
+  margin: 20px;
+  text-align: center;
 }
 
-button {
-  margin: 10px;
+footer {
+  margin: 20px;
 }
