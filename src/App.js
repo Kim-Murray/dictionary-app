@@ -9,10 +9,16 @@ export default function App() {
       <h1>Dictionary</h1>
       <Dictionary />
       <footer>
-        This dictionary is{" "}
-        <a href="https://github.com/Kim-Murray/dictionary-app">open sourced</a>{" "}
-        and hosted on{" "}
-        <a href="https://trusting-shaw-d82573.netlify.app/">Netlify</a>
+        <small>
+          This{" "}
+          <a href="https://github.com/Kim-Murray/dictionary-app">
+            open sourced
+          </a>{" "}
+          dictionary was built by{" "}
+          <a href="https://sad-yalow-d889ae.netlify.app/">Kim Murray</a> and
+          hosted on{" "}
+          <a href="https://trusting-shaw-d82573.netlify.app/">Netlify</a>
+        </small>
       </footer>
     </div>
   );
