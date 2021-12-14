@@ -4,7 +4,7 @@ import Synonyms from "./Synonyms";
 export default function Meaning(props) {
   return (
     <div className="meaning">
-      <h4>{props.meaning.partOfSpeech}</h4>
+      <h5>{props.meaning.partOfSpeech}</h5>
       {props.meaning.definitions.map(function (definitions, index) {
         return (
           <div key={index}>
