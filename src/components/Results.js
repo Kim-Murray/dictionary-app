@@ -14,14 +14,16 @@ export default function Results(props) {
 
     return (
       <div className="results">
-        <h2>{results.word}</h2>
-        {props.results[0].phonetics.map(function (phonetics, index) {
-          return (
-            <div key={index}>
-              <Phonetic phonetics={phonetics} />
-            </div>
-          );
-        })}
+        <section>
+          <h2>{results.word}</h2>
+          {props.results[0].phonetics.map(function (phonetics, index) {
+            return (
+              <div key={index}>
+                <Phonetic phonetics={phonetics} />
+              </div>
+            );
+          })}
+        </section>
         {props.results[0].meanings.map(function (meaning, index) {
           return (
             <div key={index}>
