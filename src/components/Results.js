@@ -32,7 +32,7 @@ export default function Results(props) {
 
           <div className="col-8">
             <section>
-              <img src={img} alt="image of word" className="img-fluid" />
+              <img src={img} alt="word" className="img-fluid" />
             </section>
           </div>
         </div>
