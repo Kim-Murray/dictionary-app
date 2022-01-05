@@ -1,12 +1,13 @@
 import React from "react";
 import Dictionary from "./components/Dictionary";
+import Header from "./components/Header";
 
 import "./styles/App.css";
 
 export default function App() {
   return (
     <div className="App">
-      <h1>Dictionary</h1>
+      <Header />
       <Dictionary />
       <footer>
         <small>

@@ -13,12 +13,12 @@
 .dictionary section {
   margin: 20px;
   padding: 20px;
-  background-color: rgba(109, 189, 155, 0.3);
+  background-color: rgba(109, 189, 155, 0.2);
   border: 1px solid rgb(109, 189, 155);
   border-radius: 6px;
 }
 
 .dictionary .app-container {
   border: 1px solid rgba(0, 0, 0, 0.2);
-  background-color: rgb(241, 244, 245);
+  background-color: rgb(254, 255, 255);
 }
