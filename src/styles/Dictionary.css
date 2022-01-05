@@ -1,17 +1,5 @@
-.dictionary form {
-  margin: 20px 0px;
-  padding: 10px 40px;
-  text-align: center;
-}
-
-.dictionary input {
-  width: 100%;
-  border: 1px solid rgba(0, 0, 0, 0.3);
-  border-radius: 4px;
-}
-
 .dictionary section {
-  margin: 20px;
+  margin: 30px;
   padding: 20px;
   background-color: rgba(109, 189, 155, 0.2);
   border: 1px solid rgb(109, 189, 155);
@@ -21,4 +9,16 @@
 .dictionary .app-container {
   border: 1px solid rgba(0, 0, 0, 0.2);
   background-color: rgb(254, 255, 255);
+  margin: 5vw;
+}
+
+.dictionary form {
+  margin: 20px 0px;
+  padding: 10px 40px;
+}
+
+.dictionary input {
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 4px;
 }
