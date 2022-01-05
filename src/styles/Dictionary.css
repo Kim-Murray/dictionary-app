@@ -1,6 +1,6 @@
 .dictionary section {
-  margin: 30px;
-  padding: 20px;
+  margin: 1vw;
+  padding: 1vw;
   background-color: rgba(109, 189, 155, 0.2);
   border: 1px solid rgb(109, 189, 155);
   border-radius: 6px;
@@ -10,6 +10,10 @@
   border: 1px solid rgba(0, 0, 0, 0.2);
   background-color: rgb(254, 255, 255);
   margin: 5vw;
+}
+
+.dictionary .row {
+  padding: 0;
 }
 
 .dictionary form {

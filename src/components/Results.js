@@ -4,6 +4,8 @@ import Phonetic from "./Phonetic";
 
 import img from "../images/dictionaryCropped.jpg";
 
+import "../styles/Results.css";
+
 export default function Results(props) {
   console.log(props.results);
   if (props.results) {
@@ -16,24 +18,26 @@ export default function Results(props) {
 
     return (
       <div className="results">
-        <div className="row">
-          <div className="col-4">
-            <section>
-              <h2>{results.word}</h2>
-              {props.results[0].phonetics.map(function (phonetics, index) {
-                return (
-                  <div key={index}>
-                    <Phonetic phonetics={phonetics} />
-                  </div>
-                );
-              })}
-            </section>
-          </div>
+        <div className="container">
+          <div className="row">
+            <div className="col-4">
+              <section>
+                <h2>{results.word}</h2>
+                {props.results[0].phonetics.map(function (phonetics, index) {
+                  return (
+                    <div key={index}>
+                      <Phonetic phonetics={phonetics} />
+                    </div>
+                  );
+                })}
+              </section>
+            </div>
 
-          <div className="col-8">
-            <section>
-              <img src={img} alt="word" className="img-fluid" />
-            </section>
+            <div className="col-8">
+              <section>
+                <img src={img} alt="word" className="img-fluid" />
+              </section>
+            </div>
           </div>
         </div>
         {props.results[0].meanings.map(function (meaning, index) {
