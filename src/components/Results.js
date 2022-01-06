@@ -6,7 +6,7 @@ import Photos from "./Photos";
 import "../styles/Results.css";
 
 export default function Results(props) {
-  if (props.results) {
+  if (props.photos && props.results) {
     let results = {
       word: props.results[0].word,
       phonetic: props.results[0].phonetic,
@@ -48,6 +48,6 @@ export default function Results(props) {
       </div>
     );
   } else {
-    return null;
+    return <div>Loading...</div>;
   }
 }
