@@ -18,7 +18,7 @@ export default function Results(props) {
       <div className="results">
         <div className="container-fluid">
           <div className="row">
-            <div className="col-4">
+            <div className="col-sm-4">
               <section>
                 <h2>{results.word}</h2>
                 {props.results[0].phonetics.map(function (phonetics, index) {
@@ -31,7 +31,7 @@ export default function Results(props) {
               </section>
             </div>
 
-            <div className="col-8">
+            <div className="col-sm-8">
               <section>
                 <Photos photos={props.photos} />
               </section>

@@ -6,7 +6,7 @@ export default function Photos(props) {
   console.log(props.photos);
   return (
     <div className="photos">
-      <div className="conatainer-fluid">
+      <div className="container-fluid">
         <div className="row">
           {props.photos.map(function (photo, index) {
             return (
