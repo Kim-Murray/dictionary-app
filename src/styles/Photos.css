@@ -1,0 +1,8 @@
+.photos .container {
+  display: flex;
+}
+
+.photos .photo {
+  padding: 1vw;
+  border-radius: 16px;
+}

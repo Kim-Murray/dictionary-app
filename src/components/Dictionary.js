@@ -21,7 +21,7 @@ export default function Dictionary() {
   function getPhotos() {
     const pexelsApiKey =
       "563492ad6f91700001000001a1f4892181654e5e87b82b5d55f15c47";
-    let photosURL = `https://api.pexels.com/v1/search?query=${word}&per_page=1`;
+    let photosURL = `https://api.pexels.com/v1/search?query=${word}&per_page=6`;
 
     axios
       .get(photosURL, {
