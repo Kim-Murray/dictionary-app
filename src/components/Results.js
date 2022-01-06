@@ -16,7 +16,7 @@ export default function Results(props) {
 
     return (
       <div className="results">
-        <div className="container">
+        <div className="container-fluid">
           <div className="row">
             <div className="col-4">
               <section>
