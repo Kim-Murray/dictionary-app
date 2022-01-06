@@ -5,9 +5,10 @@ import Results from "./Results";
 import "../styles/Dictionary.css";
 
 export default function Dictionary() {
-  const [word, setWord] = useState("");
+  const [word, setWord] = useState("sunset");
   const [meaningResults, setMeaningResults] = useState(null);
   const [photos, setPhotos] = useState(null);
+  const [loaded, setLoaded] = useState(false);
 
   function handleResponse(response) {
     setMeaningResults(response.data);
@@ -29,31 +30,43 @@ export default function Dictionary() {
       .then(handlePhotos);
   }
 
-  function searchWord(event) {
+  function search() {
     getPhotos();
-    event.preventDefault();
 
     let dictionaryURL = `https://api.dictionaryapi.dev/api/v2/entries/en/${word}`;
 
     axios.get(dictionaryURL).then(handleResponse);
   }
 
+  function searchWord(event) {
+    event.preventDefault();
+    search();
+  }
+
   function updateWord(event) {
     setWord(event.target.value);
   }
-  return (
-    <div className="dictionary">
-      <section className="app-container">
-        <form onSubmit={searchWord}>
-          <h4>What word would you like to search for?</h4>
-          <input
-            type="search"
-            placeholder="example: sunset"
-            onChange={updateWord}
-          />
-        </form>
-        <Results results={meaningResults} photos={photos} />
-      </section>
-    </div>
-  );
+
+  function load() {
+    setLoaded(true);
+    search();
+  }
+
+  if (loaded) {
+    return (
+      <div className="dictionary">
+        <section className="app-container">
+          <form onSubmit={searchWord}>
+            <h4>What word would you like to search for?</h4>
+            <input
+              type="search"
+              placeholder="example: sunset"
+              onChange={updateWord}
+            />
+          </form>
+          <Results results={meaningResults} photos={photos} />
+        </section>
+      </div>
+    );
+  } else load();
 }
