@@ -4,8 +4,6 @@ import { FaPlayCircle } from "react-icons/fa";
 import "../styles/Phonetic.css";
 
 export default function Phonetics(props) {
-  console.log(props.phonetics);
-
   let phonetic = props.phonetics.text;
   return (
     <div className="phonetics">

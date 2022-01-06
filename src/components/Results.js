@@ -1,13 +1,11 @@
 import React from "react";
 import Meaning from "./Meaning";
 import Phonetic from "./Phonetic";
-
-import img from "../images/dictionaryCropped.jpg";
+import Photos from "./Photos";
 
 import "../styles/Results.css";
 
 export default function Results(props) {
-  console.log(props.results);
   if (props.results) {
     let results = {
       word: props.results[0].word,
@@ -35,7 +33,7 @@ export default function Results(props) {
 
             <div className="col-8">
               <section>
-                <img src={img} alt="word" className="img-fluid" />
+                <Photos photos={props.photos} />
               </section>
             </div>
           </div>

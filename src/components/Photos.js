@@ -1,1 +1,14 @@
-let APIKEY = "563492ad6f91700001000001a1f4892181654e5e87b82b5d55f15c47";
+import React from "react";
+
+export default function Photos(props) {
+  console.log(props.photos);
+  return (
+    <div className="photos">
+      <img
+        src={props.photos[0].src.original}
+        alt={props.photos[0].alt}
+        className="img-fluid"
+      />
+    </div>
+  );
+}
