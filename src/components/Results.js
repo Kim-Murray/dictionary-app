@@ -6,6 +6,7 @@ import Photos from "./Photos";
 import "../styles/Results.css";
 
 export default function Results(props) {
+  console.log(props.results);
   if (props.photos) {
     let results = {
       word: props.results[0].word,
@@ -23,9 +24,9 @@ export default function Results(props) {
                 <h2>{results.word}</h2>
                 {props.results[0].phonetics.map(function (phonetics, index) {
                   return (
-                    <div key={index}>
+                    <span key={index}>
                       <Phonetic phonetics={phonetics} />
-                    </div>
+                    </span>
                   );
                 })}
               </section>
