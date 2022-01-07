@@ -5,3 +5,17 @@
 .results .col-4 {
   padding: 0;
 }
+
+.results h2 {
+  font-size: 50px;
+}
+
+@media (max-width: 768px) {
+  .results h2 {
+    font-size: 45px;
+  }
+
+  .results .word-phonetics-box {
+    text-align: center;
+  }
+}

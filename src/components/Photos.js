@@ -12,11 +12,13 @@ export default function Photos(props) {
             return (
               <div className="col-4" key={index}>
                 {" "}
-                <img
-                  src={photo.src.landscape}
-                  alt={photo.alt}
-                  className="img-fluid photo"
-                />
+                <a href={photo.url} target="_blank">
+                  <img
+                    src={photo.src.landscape}
+                    alt={photo.alt}
+                    className="img-fluid photo"
+                  />
+                </a>
               </div>
             );
           })}

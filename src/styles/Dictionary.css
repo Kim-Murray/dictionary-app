@@ -1,3 +1,7 @@
+.dictionary h4 {
+  font-size: 20px;
+}
+
 .dictionary section {
   margin: 2vw;
   padding: 1vw;
@@ -9,7 +13,7 @@
 .dictionary .app-container {
   border: 1px solid rgba(0, 0, 0, 0.2);
   background-color: rgb(254, 255, 255);
-  margin: 5vw;
+  margin: 3vw;
 }
 
 .dictionary .row {
@@ -25,4 +29,16 @@
   width: 100%;
   border: 1px solid rgba(0, 0, 0, 0.3);
   border-radius: 4px;
+}
+
+@media (max-width: 768px) {
+  .dictionary h4 {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 576px) {
+  .dictionary h4 {
+    font-size: 10px;
+  }
 }
