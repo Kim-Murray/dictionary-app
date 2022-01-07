@@ -10,14 +10,27 @@ export default function Meaning(props) {
         <h5>{props.meaning.partOfSpeech}</h5>
         {props.meaning.definitions.map(function (definitions, index) {
           return (
-            <div key={index}>
+            <div key={index} className="meaning-text">
               <div>
-                {definitions.definition}{" "}
-                <em>
-                  <br />{" "}
-                  <div className="example">eg. {definitions.example}</div>
-                </em>
+                - {definitions.definition}{" "}
+                {(() => {
+                  if (definitions.example) {
+                    return (
+                      <div>
+                        {" "}
+                        <em>
+                          <div className="example">
+                            eg. {definitions.example}
+                          </div>
+                        </em>
+                      </div>
+                    );
+                  } else {
+                    return null;
+                  }
+                })()}
               </div>
+              <br />
               <Synonyms synonyms={definitions.synonyms} />
             </div>
           );

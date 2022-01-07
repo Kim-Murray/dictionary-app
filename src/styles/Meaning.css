@@ -1,3 +1,17 @@
+.meaning h5 {
+  font-size: 40px;
+}
+
+.meaning .meaning-text {
+  line-height: 30px;
+}
+
 .meaning .example {
-  padding-top: 10px;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+@media (max-width: 768px) {
+  .meaning h5 {
+    font-size: 30px;
+  }
 }
