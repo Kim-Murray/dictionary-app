@@ -8,6 +8,7 @@
 
 .results h2 {
   font-size: 50px;
+  color: #379c9b;
 }
 
 @media (max-width: 768px) {
