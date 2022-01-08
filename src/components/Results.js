@@ -6,7 +6,6 @@ import Photos from "./Photos";
 import "../styles/Results.css";
 
 export default function Results(props) {
-  console.log(props.results);
   if (props.photos) {
     let results = {
       word: props.results[0].word,

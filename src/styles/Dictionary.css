@@ -13,7 +13,7 @@
 .dictionary .app-container {
   border: 1px solid rgba(0, 0, 0, 0.2);
   background-color: rgb(254, 255, 255);
-  margin: 3vw;
+  margin: 3vw 1vw;
 }
 
 .dictionary .row {

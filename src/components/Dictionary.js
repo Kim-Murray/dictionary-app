@@ -9,9 +9,13 @@ export default function Dictionary() {
   const [meaningResults, setMeaningResults] = useState(null);
   const [photos, setPhotos] = useState(null);
   const [loaded, setLoaded] = useState(false);
+  const [message, setMessage] = useState(
+    "What word would you like to search for?"
+  );
 
   function handleResponse(response) {
     setMeaningResults(response.data);
+    setMessage("What word would you like to search for?");
   }
 
   function handlePhotos(response) {
@@ -35,7 +39,12 @@ export default function Dictionary() {
 
     let dictionaryURL = `https://api.dictionaryapi.dev/api/v2/entries/en/${word}`;
 
-    axios.get(dictionaryURL).then(handleResponse);
+    axios
+      .get(dictionaryURL)
+      .then(handleResponse)
+      .catch((e) => {
+        setMessage(`${e.response.data.message} Try another word 💬`);
+      });
   }
 
   function searchWord(event) {
@@ -57,7 +66,7 @@ export default function Dictionary() {
       <div className="dictionary">
         <section className="app-container">
           <form onSubmit={searchWord}>
-            <h4>What word would you like to search for?</h4>
+            <h4>{message}</h4>
             <input
               type="search"
               placeholder="example: sunset"
