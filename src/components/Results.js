@@ -10,7 +10,6 @@ export default function Results(props) {
     let results = {
       word: props.results[0].word,
       phonetic: props.results[0].phonetic,
-      phoneticAudio: props.results[0].phonetics[0].audio,
       definition: props.results[0].meanings[0].definitions[0].definition,
     };
 
