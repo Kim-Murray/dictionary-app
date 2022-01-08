@@ -17,7 +17,7 @@ export default function Dictionary() {
   function handleResponse(response) {
     setMeaningResults(response.data);
     setError(false);
-    // setMessage("What word would you like to search for?");
+    setMessage("What word would you like to search for?");
   }
 
   function handlePhotos(response) {
