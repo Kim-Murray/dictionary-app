@@ -13,7 +13,7 @@ export default function App() {
         <small>
           This{" "}
           <a href="https://github.com/Kim-Murray/dictionary-app">
-            open sourced
+            open-sourced
           </a>{" "}
           dictionary was built by{" "}
           <a href="https://sad-yalow-d889ae.netlify.app/">Kim Murray</a> and
