@@ -6,7 +6,7 @@ import "../styles/Dictionary.css";
 
 export default function Dictionary() {
   const [word, setWord] = useState("sunset");
-  const [meaningResults, setMeaningResults] = useState(null);
+  const [results, setResults] = useState(null);
   const [photos, setPhotos] = useState(null);
   const [loaded, setLoaded] = useState(false);
   const [error, setError] = useState(false);
@@ -15,7 +15,7 @@ export default function Dictionary() {
   );
 
   function handleResponse(response) {
-    setMeaningResults(response.data);
+    setResults(response.data);
     setError(false);
     setMessage("What word would you like to search for?");
   }
@@ -91,7 +91,7 @@ export default function Dictionary() {
               onChange={updateWord}
             />
           </form>
-          <Results results={meaningResults} photos={photos} />
+          <Results results={results} photos={photos} />
         </section>
       </div>
     );
