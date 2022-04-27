@@ -8,15 +8,8 @@
 }
 
 .header h1 {
-  font-family: "Sigmar One", cursive;
+  font-family: "Water Brush", cursive;
   font-size: 10vw;
   display: inline-block;
-  padding: 0vw 5vw 1vw 5vw;
-  background-image: url("../images/dictionaryThree.jpg");
-  background-size: cover;
-  background-position: left center;
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2), -1px -1px 2px rgba(0, 0, 0, 0.2);
+  padding: 0vw 5vw;
 }
